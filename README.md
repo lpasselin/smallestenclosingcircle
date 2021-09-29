@@ -1,5 +1,4 @@
-# smallestenclosingcircle
-Smallest enclosing circle
+# Smallest enclosing circle
 
 `pip install smallestenclosingcircle`
 
@@ -15,5 +14,5 @@ center_x, center_y, radius = smallestenclosingcircle.make_circle(points)
 # Note: if no points are input, returns None
 ````
 
-Original source from list_of_valid_imodels_for_dataset.json
+Original source from: https://www.nayuki.io/page/smallest-enclosing-circle
 
