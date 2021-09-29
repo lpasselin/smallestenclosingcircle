@@ -4,7 +4,6 @@ Smallest enclosing circle
 `pip install smallestenclosingcircle`
 
 ```` python
-# usage
 import smallestenclosingcircle
 center_x, center_y, radius = smallestenclosingcircle.make_circle(points)
 
