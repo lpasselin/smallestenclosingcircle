@@ -1,5 +1,7 @@
 # Smallest enclosing circle
 
+https://github.com/lpasselin/smallestenclosingcircle
+
 `pip install smallestenclosingcircle`
 
 ```` python
