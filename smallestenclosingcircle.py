@@ -19,7 +19,7 @@
 # If not, see <http://www.gnu.org/licenses/>.
 # 
 
-import math, random
+import math
 
 
 # Data conventions: A point is a pair of floats (x, y). A circle is a triple of floats (center x, center y, radius).
@@ -31,15 +31,14 @@ import math, random
 # 
 # Initially: No boundary points known
 def make_circle(points):
-	# Convert to float and randomize order
-	shuffled = [(float(x), float(y)) for (x, y) in points]
-	random.shuffle(shuffled)
+	# Convert to float
+	points = [(float(x), float(y)) for (x, y) in points]
 	
 	# Progressively add points to circle or recompute circle
 	c = None
-	for (i, p) in enumerate(shuffled):
+	for (i, p) in enumerate(points):
 		if c is None or not is_in_circle(c, p):
-			c = _make_circle_one_point(shuffled[ : i + 1], p)
+			c = _make_circle_one_point(points[ : i + 1], p)
 	return c
 
 
