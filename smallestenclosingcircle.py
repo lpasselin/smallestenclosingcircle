@@ -20,7 +20,7 @@
 #
 
 import math
-
+from typing import Iterable, Tuple, Optional
 
 # Data conventions: A point is a pair of floats (x, y). A circle is a triple of floats (center x, center y, radius).
 
@@ -30,7 +30,9 @@ import math
 # Note: If 0 points are given, None is returned. If 1 point is given, a circle of radius 0 is returned.
 #
 # Initially: No boundary points known
-def make_circle(points):
+def make_circle(
+    points: Iterable[Tuple[float, float]]
+) -> Optional[Tuple[float, float, float]]:
     # Convert to float
     points = [(float(x), float(y)) for (x, y) in points]
 
